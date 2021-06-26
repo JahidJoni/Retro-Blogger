@@ -1,0 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Satisfy); 
+@import url(https://fonts.googleapis.com/css?family=Six+Caps);
+
+.trending{
+    font-family: 'Six Caps', sans-serif;
+    /* font-size: 192px; */
+    letter-spacing: 15px;
+    line-height: 1;
+    margin: 0;
+    font-weight: 900;
+    color: #a80567d2;
+} 

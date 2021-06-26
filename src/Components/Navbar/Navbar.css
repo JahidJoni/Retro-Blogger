@@ -6,3 +6,9 @@
     z-index: 100;
   
 }
+.logo{
+  font: normal 20px 'Cookie', cursive;
+  color: rgba(33, 102, 206, 0.89);
+  text-decoration: none;
+  font-weight: 900;
+}

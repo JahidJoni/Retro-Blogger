@@ -25,7 +25,7 @@ const ManageBlogs = () => {
             })
             .then(data => {
                 setDeleteBlog(remainingBlog);
-                alert('Service Removed')
+                alert('Blog Deleted')
             });
     }
 

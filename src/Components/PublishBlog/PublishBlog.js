@@ -24,7 +24,7 @@ const PublishBlog = () => {
             body: JSON.stringify(serviceData)
         })
             .then(res => {
-                alert("BLog Published")
+                alert("Blog Published")
             })
 
 

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './SideBar.css'
-
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const SideBar = () => {
     const loggedInUser = JSON.parse(sessionStorage.getItem("user"))
     console.log(loggedInUser);
@@ -22,11 +23,12 @@ const SideBar = () => {
         <div className="mt-4">
             <input type="checkbox" id="check" />
             <label for="check">
-                <i class="fas fa-bars" id="btn"></i>
-                <i class="fas fa-times" id="cancel"></i>
+                <i class="fas fa-bars" id="btn">
+                <FontAwesomeIcon icon={faBars}></FontAwesomeIcon></i>
+                <i class="fas fa-times" id="cancel"><FontAwesomeIcon icon={faTimes}></FontAwesomeIcon></i>
             </label>
             <div class="sidebar">
-                <header>My Menu</header>
+                <header>Menu</header>
                 {
                     isAdmin && <div>
                     <Link to="/publish" class="active">

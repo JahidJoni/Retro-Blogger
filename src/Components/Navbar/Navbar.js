@@ -1,6 +1,6 @@
 import React, {useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-// import { UserContext } from "../../App"
+import brand from '../../images/PngItem_1757261.png'
 import "./Navbar.css"
 
 const NavBar = () => {
@@ -8,11 +8,12 @@ const NavBar = () => {
   console.log(loggedInUser);
 
   return (
-    <div className="sticky-navbar">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <div className="sticky-navbar shadow-sm">
+      <nav style={{backgroundColor: '#EAC8AF'}} className="navbar navbar-expand-lg navbar-light">
         <div className="container">
-          <Link to="/" className="navbar-brand" href="#">
+          <Link to="/" className="logo" href="#">
             Retro Blogger
+            <img src={brand} alt="" height="24" class="d-inline-block align-text-top ms-3" />
           </Link>
           <button
             className="navbar-toggler"
@@ -56,7 +57,7 @@ const NavBar = () => {
                   <img
                     style={{ width: "40px", borderRadius: "50px", marginRight: "7px" }}
                     src={loggedInUser.photoURL}
-                    alt={loggedInUser.name}
+                    alt=""
                   />{" "}
                   {loggedInUser.name}
                 </Link>
