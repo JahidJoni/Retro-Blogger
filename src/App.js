@@ -27,18 +27,18 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
-          <Route path="/publish">
+          <PrivateRoute path="/publish">
               <PublishBlog></PublishBlog>
-          </Route>
-          <Route path="/admin">
+          </PrivateRoute>
+          <PrivateRoute path="/admin">
               <MakeAdmin></MakeAdmin>
-          </Route>
+          </PrivateRoute>
           <PrivateRoute path="/dashboard">
               <Dashboard></Dashboard>
           </PrivateRoute>
-          <Route path="/manageblog">
+          <PrivateRoute path="/manageblog">
               <ManageBlogs></ManageBlogs>
-          </Route>
+          </PrivateRoute>
           <Route exact path="/">
             <Home></Home>
           </Route>
