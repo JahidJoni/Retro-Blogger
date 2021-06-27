@@ -7,26 +7,26 @@ const PublishBlog = () => {
     const [imageURL, setImageURL] = useState(null);
     const { register, handleSubmit, errors } = useForm();
 
-    const onSubmit = data => {
-        const serviceData = {
+    const onSubmit = (data, e) => {
+        e.preventDefault();
+        const blogData = {
             title: data.title,
             content: data.content,
             url: data.url,
             image: imageURL
         }
-        console.log(serviceData);
 
         fetch('https://hidden-shelf-25964.herokuapp.com/postBlog', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(serviceData)
+            body: JSON.stringify(blogData)
         })
             .then(res => {
                 alert("Blog Published")
+                window.location.reload(false);
             })
-
 
     }
 

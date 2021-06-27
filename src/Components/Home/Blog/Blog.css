@@ -22,6 +22,9 @@ hr {
   .coloured-line{
     border: 1px solid red;
   }  
+  .blog-content{
+    text-decoration: none;
+  }
   @media only screen and (max-width: 768px) {
     .blog-img {
       height: 170px !important;

@@ -26,6 +26,7 @@ const ManageBlogs = () => {
             .then(data => {
                 setDeleteBlog(remainingBlog);
                 alert('Blog Deleted')
+                window.location.reload(false);
             });
     }
 
