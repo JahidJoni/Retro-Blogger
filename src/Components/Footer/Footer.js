@@ -1,5 +1,7 @@
 import React from 'react';
 import './Footer.css'
+import { faFacebook, faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const Footer = () => {
@@ -56,10 +58,10 @@ const Footer = () => {
 
                     <div class="footer-icons">
 
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                        <a href="#"><i class="fa fa-github"></i></a>
+                        <a href="#"><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon> </a>
+                        <a href="#"><FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon> </a>
+                        <a href="#"><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon> </a>
+                        <a href="#"><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> </a>
 
                     </div>
 

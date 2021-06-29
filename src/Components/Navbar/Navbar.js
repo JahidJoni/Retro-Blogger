@@ -8,8 +8,8 @@ const NavBar = () => {
   console.log(loggedInUser);
 
   return (
-    <div className="sticky-navbar shadow-sm">
-      <nav style={{backgroundColor: '#EAC8AF'}} className="navbar navbar-expand-lg navbar-light">
+    <div className="sticky-navbar">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
           <Link to="/" className="logo" href="#">
             Retro Blogger

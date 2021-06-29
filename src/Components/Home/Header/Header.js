@@ -13,10 +13,10 @@ const Header = () => {
 
             <h3 className='trending text-center'>TRENDING</h3>
             
-                    <hr className="mb-4"></hr>
+                    <hr className="my-4"></hr>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <div className="row" style={{ backgroundColor: '#E4D8B4' }}>
+                            <div className="row bg-light">
                                 <div className="col-md-4">
                                     <img className="img-fluid" src={bg1} alt="" />
                                 </div>
@@ -30,7 +30,7 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <div className="row" style={{ backgroundColor: '#E4D8B4' }}>
+                            <div className="row bg-light">
                                 <div className="col-md-4">
                                     <img className="img-fluid" src={bg2} alt="" />
                                 </div>
@@ -44,7 +44,7 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="carousel-item" >
-                            <div className="row" style={{ backgroundColor: '#E4D8B4' }}>
+                            <div className="row bg-light">
                                 <div className="col-md-8 d-flex align-items-center">
                                     <div className="m-3 p-2">
                                         <h4>Your most unhappy customers are your greatest source of learning</h4>
@@ -58,7 +58,7 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <div className="row" style={{ backgroundColor: '#E4D8B4' }}>
+                            <div className="row bg-light">
                                 <div className="col-md-4">
                                     <img className="img-fluid" src={bg4} alt="" />
                                 </div>

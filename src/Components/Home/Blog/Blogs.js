@@ -13,7 +13,7 @@ const Blogs = () => {
   }, [])
 
   return (
-    <section>
+    <section className='bg-light pt-4'>
       <h2
         style={{ fontWeight: 700 }}
         className="text-secondary text-center"
